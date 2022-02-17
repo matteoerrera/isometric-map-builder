@@ -1,12 +1,12 @@
 document.addEventListener("DOMContentLoaded", ()=>{
 
     let gridSize = {
-        rows: 10,
-        colums: 10
+        rows: 15,
+        colums: 15
     }
     
+
     let grid = document.querySelector("#grid");
-    let cells
     let itemsList = document.querySelector(".items-list");
     let itemsListWrap = document.querySelector(".items-list-wrap");
     let items = itemsList.querySelectorAll(".item");
@@ -157,7 +157,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
                         itemsArr.splice(index, 1)
                     }
                 })
-                renderHistory();
                 renderToGrid();
             })
 
@@ -249,7 +248,6 @@ document.addEventListener("DOMContentLoaded", ()=>{
         })
 
         renderToGrid();
-        renderHistory();
         setZindex()
     }
 
@@ -350,11 +348,14 @@ document.addEventListener("DOMContentLoaded", ()=>{
     fillrandom.addEventListener("click", ()=>{
         fillGrid();
     })
-    
+
+
+
 
     
 // dom load
 })
+
 
 
 

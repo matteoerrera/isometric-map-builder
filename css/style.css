@@ -17,7 +17,7 @@ section#view {
 }
 
 .desc {
-    position: absolute;
+    position: fixed;
     bottom: 10px;
     left: 10px;
     width: 100%;
@@ -229,4 +229,33 @@ section#view {
 
 .close-list-active {
     transform: translate(-250px)
+}
+
+.zoom {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    display: flex;
+}
+
+.zoom div {
+    font-size: 20px;
+    background: red;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+    color: white;
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+}
+
+.zoom div:hover {
+    background: orange;
+}
+
+
+#map-container {
+    transition: transform 1000ms ease;
 }
